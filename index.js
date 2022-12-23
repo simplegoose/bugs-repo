@@ -3,7 +3,8 @@ const nav = document.querySelector('.nav-wrapper');
 const closeBtn = document.querySelector('.close-menu');
 const ancreLinks = nav.getElementsByTagName('a');
 
-const theModal = document.querySelector('#myModal');
+let theModal = document.querySelector('#myModal');
+theModal = document.querySelector('.modal');
 const closeModal = document.querySelector('.closeModal');
 const worksSection = document.querySelector('.work-container');
 
@@ -159,7 +160,7 @@ function showMessage(input, message, type) {
 }
 
 function showError(input, message) {
-  return showMessage(input, message, false);
+  return showMessag(input, message, false);
 }
 
 function showSuccess(input) {
